@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   kube-arch-scheduler:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-04-14T10:15:18.471042571Z"
+    description: A Helm chart for Kubernetes
+    digest: bfd5f5c544bb843ebb39555584cb378a3b2a4dd8ce420124351544ac227e23bd
+    name: kube-arch-scheduler
+    type: application
+    urls:
+    - https://github.com/pl4nty/kube-arch-scheduler/releases/download/kube-arch-scheduler-0.1.1/kube-arch-scheduler-0.1.1.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.0.8
     created: "2023-07-18T07:00:39.471042571Z"
     description: A Helm chart for Kubernetes
