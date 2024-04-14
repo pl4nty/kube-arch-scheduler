@@ -26,7 +26,7 @@ archives:
       
 dockers:
   - image_templates:
-      - "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}-amd64"
+      - "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}-amd64"
     dockerfile: Dockerfile
     use: buildx
     build_flag_templates:
@@ -44,7 +44,7 @@ dockers:
     goarch: amd64
     goos: linux      
   - image_templates:
-      - "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}-arm64"
+      - "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}-arm64"
     dockerfile: Dockerfile
     use: buildx
     build_flag_templates:
@@ -64,14 +64,14 @@ dockers:
     goos: linux
 
 docker_manifests:
-  - name_template: "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}"
+  - name_template: "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}"
     image_templates:
-      - "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}-amd64"
-      - "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}-arm64"
-  - name_template: "ghcr.io/elementtech/{{.ProjectName}}:latest"
+      - "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}-amd64"
+      - "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}-arm64"
+  - name_template: "ghcr.io/pl4nty/{{.ProjectName}}:latest"
     image_templates:
-      - "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}-amd64"
-      - "ghcr.io/elementtech/{{.ProjectName}}:{{ .Tag }}-arm64"
+      - "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}-amd64"
+      - "ghcr.io/pl4nty/{{.ProjectName}}:{{ .Tag }}-arm64"
 
 checksum:
   name_template: "checksums.txt"
